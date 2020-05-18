@@ -42,6 +42,10 @@ export class AppComponent implements OnDestroy {
     });
   }
 
+  callme() {
+    console.log('calle me');
+  }
+
   ngOnDestroy() {
     this.destroy$.next(true);
     this.destroy$.unsubscribe();
